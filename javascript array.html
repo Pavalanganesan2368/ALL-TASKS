@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>ARRAY</title>
+    </head>
+    <body> 
+        <p><b><h1>JAVASCRIPT ARRAY METHOD</h1></b></p>
+
+        <p><b><u>TO FIND THE BIGGEST NUMBER</u></b></p>
+        <p id="array1"></p>
+        <p><b><u>TO FIND THE SUM OF THE NUMBER</u></b></p>
+        <p id="array2"></p>
+        <p><b><u>TO FIND THE LENGTH OF THE ARRAY STRING</u></b></p>
+        <p id="array3"></p>
+        <p><b><u>TO FIND THE ADD AN ELEMENT TO THE END</u></b></p>
+        <p id="array4"></p>
+        <p><b><u>TO FIND THE ADD THE ELEMENT TO THE BEGINNING</u></b></p>
+        <p id="array5"></p>
+        <p><b><u>TO USE THE REMOVE LAST ELEMENT OF THE ARRAY</u></b></p>
+        <p id="array6"></p>
+        <p><b><u>TO USE THE REMOVE THE FIRSTELEMENT OF THE ARRAY</u></b></p>
+        <p id="array7"></p>
+        <p><b><u>TO FIND THE INDEX OF THE ELEMENT</u></b></p>
+        <p id="array8"></p>
+        <p><b><u>TO REMOVE THE ELEMENT OF AN ARRAY </u></b></p>
+        <p id="array9"></p>
+        <p><b><u>TO JOIN ALL THE ELEMENT IN AN ARRAY</u></b></p>
+        <p id="array10"></p>
+        <p><b><u>TO SET AN OBJECT ONE BY ONE</u></b></p>
+        <p id="array11"></p>
+
+        <script>
+            //TO CREATE A BIGGEST NUMBER
+            let number1=[1,2,3,4,5];
+            document.getElementById("array1").innerHTML=Math.max(1,2,3,4,5);
+        </script>
+
+        <script>
+            //TO FIND THE SUM OF THE NUMBER
+            let add=0;
+            const numbers=[40,50,60,50];
+            numbers.forEach(myfunction);
+            document.getElementById("array2").innerHTML=add;
+            function myfunction(item){
+                add+=item;
+            }
+        </script>
+
+        <script>
+            //TO FIND THE LENGTH OF A ARRAY
+            const char1=["apple","banana","orange"];
+            let char2=char1.length;
+            document.getElementById("array3").innerHTML=char2;
+        
+        </script>
+
+        <script>
+            //TO CREATE A ARRAY BY USING PUSH
+            const bike=["HONDA","SPLENDER","PULSER","YAMAHA"];
+            bike.push("PUMA");
+            document.getElementById("array4").innerHTML=bike;
+         
+        </script>
+ 
+        <script>
+            //TO CREATE A ARRAY BY USING POP
+           const cricket=["SG","MRF","DSC","PUMA"];
+            cricket.pop();
+            document.getElementById("array5").innerHTML=cricket;
+
+        </script>
+         
+        <script>
+             //TO CREATE A ARRAY BY USING SHIFT
+             const things1=["SOAP","SHAMPOO","HAIR OIL","COMB"];
+            things1.unshift("OIL");
+            document.getElementById("array6").innerHTML=things1; 
+        </script>
+
+        <script>
+             //TO CREATE A ARRAY BY USING UNSHIFT
+             const fruits1=["APPLE","BANANA","MANGO","ORANGE"];
+            fruits1.shift();
+            document.getElementById("array7").innerHTML=fruits1;
+
+        </script>
+
+        <script>
+             //TO CREATE A ARRAY BY USING INDEXOF
+            const teams1=["INDIA","AUSTRALIA","NEW ZEALAND","ENGLAND"];
+            const teams2=teams1.indexOf();
+            document.getElementById("array8").innerHTML=teams2;
+
+        </script>
+
+        <script>
+             //TO CREATE A ARRAY BY USING SPLICE
+              const games1=["GOD OF WAR","CONJURING HOUSE","RESIDENT EVIL","EVILWITH","GOD OF WAR"];
+            const games2=games1.splice(0,2,"GOD OF WAR","EVILWITH");
+            document.getElementById("array9").innerHTML=games2;
+        </script>
+         
+        <script>
+             //TO CREATE A ARRAY BY JOINING USING JOIN METHOD
+            const text1=["PAVALAN","GANESAN","CHANDRA"];
+            const text2=text1.join(" * ");
+            document.getElementById("array10").innerHTML=text2;
+        </script>
+
+
+        <script>
+             //TO CREATE A SIMPLE OBJECT AND DISPLAY
+            const person={
+                Firstname:"PAVALAN", 
+                Lastname:"GANESAN",
+                city:"TRICHY",
+                age:18,
+                dob:"07/04/2004"
+            };
+            document.getElementById("array11").innerHTML="THE NAME IS " +person.Firstname + " " +person.Lastname + " THE CITY IS " +person.city + " HIS AGE IS " +person.age + " THE DATE OF BIRTH IS " +person.dob;  
+        </script>
+
+        </script>
+
+    </body>
+</html>
